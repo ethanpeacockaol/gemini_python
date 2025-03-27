@@ -13,6 +13,10 @@
 # clear the screen
 import os
 
+# TODO: REMOVE
+#_______________________________________________________________________________
+# 80 columns ^
+
 
 
 # game on flag
