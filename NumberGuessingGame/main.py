@@ -10,6 +10,7 @@
 # yes or no
 # repeat if not quit
 
+# clear the screen
 import os
 
 
@@ -23,16 +24,20 @@ def welcome():
 	"""
 	# clear screen
 	os.system(' clear')
+	# set width of border
 	cell_width = 30
+	# print border
 	_ = [print('~', end='') for i in range(cell_width)]
 	print()
 	print("Number Guessing Game")
 	print()
+	# print border
 	_ = [print('~', end='') for i in range(cell_width)]
 	
 def start_game():
 	# start menu
 	welcome()
-	
+
+# prevent execution on import
 if __name__ == "__main__":
 	start_game()
