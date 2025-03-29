@@ -1,47 +1,53 @@
-# shebang thing python whats windows?
+# Number Guessing Game
 
-#TODO: get the computer to generate a random number, and the user tries to guess it
-
-
-# while loop until game quit
-# limit range 0 to 10 inclusive
-# take input through into or lowercase forced word string
-# validate
-# yes or no
-# repeat if not quit
-
-# clear the screen
 import os
 
-# TODO: REMOVE
-#_______________________________________________________________________________
-# 80 columns ^
 
 
 
-# game on flag
-run_game = True
+# Pipeline blueprint
 
-def welcome():
-	"""
-	this prints the welcome screen and selection menu
-	"""
-	# clear screen
-	os.system(' clear')
-	# set width of border
-	cell_width = 30
-	# print border
-	_ = [print('~', end='') for i in range(cell_width)]
-	print()
-	print("Number Guessing Game")
-	print()
-	# print border
-	_ = [print('~', end='') for i in range(cell_width)]
-	
-def start_game():
-	# start menu
-	welcome()
+# show welcome screen 1
 
-# prevent execution on import
-if __name__ == "__main__":
-	start_game()
+# ask user when to start 2
+
+# ask user for range and if they want to exclude any numbers
+# allow negative numbers
+# allow floats up to specified decimal place
+
+# start the game
+
+# yes no yes no yes no yes no
+
+# stop by typing q
+
+
+
+def welcome_screen():
+	'''print the welcome screen.
+
+	Args:
+		None
+	Returns:
+		None
+	'''
+	# start by clearing the screen (unix only)
+	os.system('clear')
+
+	# get terminal size
+	rows, columns = os.popen('stty size', 'r').read().split()
+	rows = int(rows)
+	columns = int(columns)
+
+	# print game banner
+	_ = [[print('~', end='') for i in range(columns)] for i in range(rows-1)]
+	a = input(_ = [print('-', end='') for i in range(columns)])
+
+
+
+
+
+
+if __name__ == '__main__':
+    # show welcome screen
+    welcome_screen()
