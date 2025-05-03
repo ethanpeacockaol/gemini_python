@@ -41,7 +41,7 @@ def welcome_screen():
 
 	# print game banner
 	_ = [[print('~', end='') for i in range(columns)] for i in range(rows-1)]
-	a = input(_ = [print('-', end='') for i in range(columns)])
+	a = input()
 
 
 
